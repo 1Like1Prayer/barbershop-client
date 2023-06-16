@@ -1,3 +1,3 @@
-export default function Home() {
-    return <button>Index </button>;
-}
+import myNavbar from '@/app/components/my-navvar';
+
+export default myNavbar;

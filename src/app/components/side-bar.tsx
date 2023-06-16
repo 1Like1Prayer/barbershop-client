@@ -1,7 +1,8 @@
+'use client';
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
-export default function Example() {
+const SideBar = () => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -53,4 +54,5 @@ export default function Example() {
             </Transition.Root>
         </>
     );
-}
+};
+export default SideBar;
