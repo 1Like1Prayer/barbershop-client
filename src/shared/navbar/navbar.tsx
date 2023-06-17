@@ -3,9 +3,9 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon } from '@heroicons/react/24/outline';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
-import tomatoLogo from '../../../public/tomatoLogo.svg';
+import tomatoLogo from '../../../public/tomatoLogo2.svg';
 import Backdrop from '@/shared/navbar/backdrop';
-import Panel from '@/shared/navbar/Panel';
+import Panel from '@/shared/navbar/panel';
 
 const MyNavbar = () => {
     const [open, setOpen] = useState<boolean>(false);
@@ -17,7 +17,7 @@ const MyNavbar = () => {
                     <Panel />
                 </Dialog>
             </Transition>
-            <nav className="bg-gray-300 ">
+            <nav>
                 <div className=" h-16 flex justify-between px-2 items-center">
                     <div className="flex flex-row items-center justify-around ">
                         <Image
@@ -25,20 +25,20 @@ const MyNavbar = () => {
                             src={tomatoLogo}
                             className="w-10"
                         />
-                        <span className="px-4 font-medium pt-1">
+                        <span className="px-4 font-medium pt-1 text-[#9DB2BF]">
                             BarberShop Scheduler
                         </span>
                     </div>
                     <div className="flex items-center justify-evenly w-24">
                         <button>
                             <BellIcon
-                                className="h-6 w-6 hover:text-[#00ADB5]"
+                                className="h-6 w-6 text-[#9DB2BF] hover:text-[#00ADB5]"
                                 aria-hidden="false"
                             />
                         </button>
                         <button onClick={() => setOpen(!open)}>
                             <Bars3Icon
-                                className=" h-10 w-6 hover:text-[#00ADB5]"
+                                className=" h-10 w-6 text-[#9DB2BF] hover:text-[#00ADB5]"
                                 aria-hidden="false"
                             />
                         </button>

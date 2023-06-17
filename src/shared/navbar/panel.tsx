@@ -1,5 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
+import PanelContent from '@/shared/navbar/panel-content';
 
 const Panel = () => (
     <Transition.Child
@@ -12,11 +13,7 @@ const Panel = () => (
         leaveTo="translate-x-full"
     >
         <Dialog.Panel className="bg-[#EEEEEE] rounded fixed inset-y-0 right-0 w-fit">
-            <div className="px-14">
-                <Dialog.Title>Deactivate account</Dialog.Title>
-
-                <div className=" text-center">hello world</div>
-            </div>
+            <PanelContent />
         </Dialog.Panel>
     </Transition.Child>
 );
