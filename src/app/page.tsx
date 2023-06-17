@@ -1,3 +1,3 @@
-import myNavbar from '@/app/components/my-navvar';
+import myNavbar from '@/shared/navbar/navbar';
 
 export default myNavbar;
